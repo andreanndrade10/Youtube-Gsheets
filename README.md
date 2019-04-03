@@ -1,5 +1,3 @@
-#Sraping Youtube to Google Sheets
-
 ## What you will need:
 
 1. Python 3.7
