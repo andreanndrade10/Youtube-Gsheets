@@ -6,7 +6,9 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 chromedriver_path = 'C:/Users/ASUS/Documents/Python/chromedriver.exe' # Change this to your own chromedriver path!
 webdriver = webdriver.Chrome(executable_path=chromedriver_path)
-webdriver.get('https://www.youtube.com/results?search_query=pra+quem+pedala')
+
+#Change the url for the channel you want extract data
+webdriver.get('https://www.youtube.com/results?search_query=channel+that+you+want+scrap')
 
 
 p_element2 = webdriver.find_element_by_xpath("//span[@id='video-count']")
@@ -36,3 +38,5 @@ now = datetime.datetime.now()
 #write on the last empty row
 wks.append_row([now.strftime("%Y-%m-%d"), nSubscribers, nVideos])
 print("Your Google Sheet is updated!")
+
+

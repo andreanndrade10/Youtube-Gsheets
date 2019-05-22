@@ -1,2 +1,8 @@
 # Excluding authentication files from GSheets API
 *.json
+
+# Excluding pythonCharm folder
+idea/
+
+
+
