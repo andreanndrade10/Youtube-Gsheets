@@ -4,5 +4,6 @@
 # Excluding pythonCharm folder
 idea/
 
-
+# Excluding temporary files
+*~
 
